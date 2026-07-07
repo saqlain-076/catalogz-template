@@ -99,6 +99,32 @@ img {
   padding: 2rem 0 1.4rem;
 }
 
+.gallery-toolbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.gallery-heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding-bottom: 0.4rem;
+  border-bottom: 1px solid var(--border);
+}
+
+.gallery-heading h2 {
+  margin: 0;
+  font-size: 1.4rem;
+}
+
+.page-meta {
+  color: var(--muted);
+  font-weight: 600;
+}
+
 .eyebrow {
   text-transform: uppercase;
   letter-spacing: 0.18em;
@@ -145,6 +171,12 @@ img {
   border-radius: 16px;
   overflow: hidden;
   box-shadow: 0 8px 22px rgba(15, 23, 42, 0.06);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 12px 28px rgba(15, 23, 42, 0.1);
 }
 
 .card-image {
@@ -154,7 +186,7 @@ img {
 }
 
 .card-body {
-  padding: 1rem;
+  padding: 1rem 1rem 1.1rem;
 }
 
 .card h3 {
