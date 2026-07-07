@@ -1,76 +1,20 @@
 const photos = [
-  {
-    id: 'clocks',
-    title: 'Clocks',
-    date: '18 Oct 2020',
-    views: '9,906',
-    category: 'objects',
-    image: 'https://images.unsplash.com/photo-1518546305927-5a555bb7020d?auto=format&fit=crop&w=900&q=80',
-    description: 'A modern composition of timepieces and light, captured with a crisp editorial feel.'
-  },
-  {
-    id: 'plants',
-    title: 'Plants',
-    date: '14 Oct 2020',
-    views: '16,100',
-    category: 'nature',
-    image: 'https://images.unsplash.com/photo-1466692476868-aef1dfb1e735?auto=format&fit=crop&w=900&q=80',
-    description: 'Fresh greenery and soft daylight give this image a calm, balanced atmosphere.'
-  },
-  {
-    id: 'morning',
-    title: 'Morning',
-    date: '12 Oct 2020',
-    views: '12,460',
-    category: 'travel',
-    image: 'https://images.unsplash.com/photo-1493246507139-91e8fad9978e?auto=format&fit=crop&w=900&q=80',
-    description: 'Morning light on a quiet road, perfect for storytelling and cinematic mood.'
-  },
-  {
-    id: 'pinky',
-    title: 'Pinky',
-    date: '10 Oct 2020',
-    views: '11,402',
-    category: 'people',
-    image: 'https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?auto=format&fit=crop&w=900&q=80',
-    description: 'Bright color and gentle expression turn this portrait into a memorable moment.'
-  },
-  {
-    id: 'hangers',
-    title: 'Hangers',
-    date: '24 Sep 2020',
-    views: '16,008',
-    category: 'objects',
-    image: 'https://images.unsplash.com/photo-1524758631624-e2822e304c36?auto=format&fit=crop&w=900&q=80',
-    description: 'Everyday objects arranged with care create rhythm and texture in the frame.'
-  },
-  {
-    id: 'perfumes',
-    title: 'Perfumes',
-    date: '20 Sep 2020',
-    views: '12,860',
-    category: 'objects',
-    image: 'https://images.unsplash.com/photo-1594035910387-fea47794261f?auto=format&fit=crop&w=900&q=80',
-    description: 'A delicate study of packaging, color, and design details in soft light.'
-  },
-  {
-    id: 'bus',
-    title: 'Bus',
-    date: '16 Sep 2020',
-    views: '10,900',
-    category: 'travel',
-    image: 'https://images.unsplash.com/photo-1517048676732-d65bc937f952?auto=format&fit=crop&w=900&q=80',
-    description: 'Urban motion and layered colors bring life to this city scene.'
-  },
-  {
-    id: 'new-york',
-    title: 'New York',
-    date: '12 Sep 2020',
-    views: '11,300',
-    category: 'travel',
-    image: 'https://images.unsplash.com/photo-1494526585095-c41746248156?auto=format&fit=crop&w=900&q=80',
-    description: 'A skyline moment that captures the energy of the city at dusk.'
-  }
+  { id: 'clocks', title: 'Clocks', date: '18 Oct 2020', views: '9,906', category: 'objects', image: 'https://images.unsplash.com/photo-1518546305927-5a555bb7020d?auto=format&fit=crop&w=900&q=80', description: 'A modern composition of timepieces and light, captured with a crisp editorial feel.' },
+  { id: 'plants', title: 'Plants', date: '14 Oct 2020', views: '16,100', category: 'nature', image: 'https://images.unsplash.com/photo-1466692476868-aef1dfb1e735?auto=format&fit=crop&w=900&q=80', description: 'Fresh greenery and soft daylight make this nature scene feel calm and balanced.' },
+  { id: 'morning', title: 'Morning', date: '12 Oct 2020', views: '12,460', category: 'travel', image: 'https://images.unsplash.com/photo-1493246507139-91e8fad9978e?auto=format&fit=crop&w=900&q=80', description: 'Morning light on a quiet road adds a cinematic mood to the frame.' },
+  { id: 'pinky', title: 'Pinky', date: '10 Oct 2020', views: '11,402', category: 'people', image: 'https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?auto=format&fit=crop&w=900&q=80', description: 'A bright and expressive portrait that stands out with bold color.' },
+  { id: 'hangers', title: 'Hangers', date: '24 Sep 2020', views: '16,008', category: 'objects', image: 'https://images.unsplash.com/photo-1524758631624-e2822e304c36?auto=format&fit=crop&w=900&q=80', description: 'Everyday objects arranged with care create rhythm and texture.' },
+  { id: 'perfumes', title: 'Perfumes', date: '20 Sep 2020', views: '12,860', category: 'objects', image: 'https://images.unsplash.com/photo-1594035910387-fea47794261f?auto=format&fit=crop&w=900&q=80', description: 'A delicate study of packaging, color, and design detail in soft light.' },
+  { id: 'bus', title: 'Bus', date: '16 Sep 2020', views: '10,900', category: 'travel', image: 'https://images.unsplash.com/photo-1517048676732-d65bc937f952?auto=format&fit=crop&w=900&q=80', description: 'Urban motion and layered colors bring life to this city scene.' },
+  { id: 'new-york', title: 'New York', date: '12 Sep 2020', views: '11,300', category: 'travel', image: 'https://images.unsplash.com/photo-1494526585095-c41746248156?auto=format&fit=crop&w=900&q=80', description: 'A skyline moment that captures the energy of the city at dusk.' },
+  { id: 'abstract', title: 'Abstract', date: '10 Sep 2020', views: '42,700', category: 'art', image: 'https://images.unsplash.com/photo-1516321497487-e288fb19713f?auto=format&fit=crop&w=900&q=80', description: 'Abstract shapes and saturated tones create a bold visual statement.' },
+  { id: 'flowers', title: 'Flowers', date: '8 Sep 2020', views: '11,402', category: 'nature', image: 'https://images.unsplash.com/photo-1490750967868-88aa4486c946?auto=format&fit=crop&w=900&q=80', description: 'A vibrant flower arrangement with soft depth and rich texture.' },
+  { id: 'rosy', title: 'Rosy', date: '4 Sep 2020', views: '32,906', category: 'people', image: 'https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=900&q=80', description: 'Warm tones and soft lighting create an intimate portrait.' },
+  { id: 'rocki', title: 'Rocki', date: '28 Aug 2020', views: '50,700', category: 'music', image: 'https://images.unsplash.com/photo-1516280440614-37939bbacd81?auto=format&fit=crop&w=900&q=80', description: 'A bold, energetic composition shaped by movement and texture.' },
+  { id: 'purple', title: 'Purple', date: '22 Aug 2020', views: '107,510', category: 'art', image: 'https://images.unsplash.com/photo-1493246507139-91e8fad9978e?auto=format&fit=crop&w=900&q=80', description: 'A deep purple palette and dramatic framing make the image memorable.' },
+  { id: 'sea', title: 'Sea', date: '14 Aug 2020', views: '118,006', category: 'travel', image: 'https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=900&q=80', description: 'The coast and sky blend naturally into a serene scenic frame.' },
+  { id: 'turtle', title: 'Turtle', date: '9 Aug 2020', views: '121,300', category: 'nature', image: 'https://images.unsplash.com/photo-1546182990-dffeafbe841d?auto=format&fit=crop&w=900&q=80', description: 'A close-up of a turtle with clear detail and a peaceful mood.' },
+  { id: 'peace', title: 'Peace', date: '3 Aug 2020', views: '21,204', category: 'nature', image: 'https://images.unsplash.com/photo-1500534623283-312aade485b7?auto=format&fit=crop&w=900&q=80', description: 'Quiet scenery and soft light create a reflective atmosphere.' }
 ];
 
 const state = {
@@ -90,7 +34,7 @@ function getFilteredPhotos() {
 function renderGallery() {
   const grid = document.getElementById('galleryGrid');
   const pageInfo = document.getElementById('pageInfo');
-  if (!grid) return;
+  if (!grid || !pageInfo) return;
 
   const filtered = getFilteredPhotos();
   const totalPages = Math.max(1, Math.ceil(filtered.length / state.perPage));
