@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Catalog-Z Demo</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body data-page="home">
+    <header class="topbar">
+      <a class="brand" href="index.html">Catalog-Z</a>
+      <nav class="nav-links">
+        <a href="index.html" class="active">Gallery</a>
+        <a href="photo-detail.html">Details</a>
+      </nav>
+      <div class="search-box">
+        <input id="searchInput" type="text" placeholder="Search photos..." />
+        <button id="searchButton" type="button">🔎</button>
+      </div>
+    </header>
+
+    <main class="container">
+      <section class="hero">
+        <div>
+          <p class="eyebrow">Latest photos</p>
+          <h1>Discover beautiful moments</h1>
+          <p class="hero-copy">
+            A clean gallery experience with search, pagination, and a detail page.
+          </p>
+        </div>
+      </section>
+
+      <section class="gallery-header">
+        <h2>Latest Photos</h2>
+        <div class="pagination-meta">
+          <span id="pageInfo"></span>
+        </div>
+      </section>
+
+      <section id="galleryGrid" class="gallery-grid"></section>
+
+      <div class="pagination" id="pagination"></div>
+    </main>
+
+    <footer class="footer">
+      <p>© 2026 Catalog-Z Demo. Built with HTML, CSS and JavaScript.</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
